@@ -1,4 +1,4 @@
-import 'package:brincando_flutter/view/tela_inicial_view.dart';
+import 'package:brincando_flutter/view/tela_inicial_jogos_view.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -16,6 +16,39 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+        centerTitle: true,
+      ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            UserAccountsDrawerHeader(
+              accountName: const Text("Emilia"),
+              accountEmail: const Text("emilia@gmail.com"),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor:
+                    Theme.of(context).platform == TargetPlatform.iOS
+                        ? Colors.blue
+                        : Colors.white,
+                // ignore: prefer_const_constructors
+                child: const Text(
+                  "M",
+                  style: TextStyle(fontSize: 40.0),
+                ),
+              ),
+            ),
+            // ignore: prefer_const_constructors
+            const ListTile(
+              leading: Icon(Icons.account_circle),
+              title: Text('Meu perfil'),
+            ),
+            // ignore: prefer_const_constructors
+            const ListTile(
+              leading: Icon(Icons.settings),
+              title: Text('Configurações da conta'),
+            ),
+          ],
+        ),
       ),
       body: Center(
         child: Column(
