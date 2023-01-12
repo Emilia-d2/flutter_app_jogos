@@ -1,7 +1,7 @@
-import 'package:brincando_flutter/apps/calculadora/view/calculadora_view.dart';
-import 'package:brincando_flutter/apps/lembretes/view/lembretes_view.dart';
-import 'package:brincando_flutter/apps/tarefas/view/tarefas_view.dart';
-import 'package:brincando_flutter/apps/tik_tak_toe/view/jogo_velha_view.dart';
+import 'package:PlayMili/apps/calculadora/view/calculadora_view.dart';
+import 'package:PlayMili/apps/lembretes/view/lembretes_view.dart';
+import 'package:PlayMili/apps/tarefas/view/tarefas_view.dart';
+import 'package:PlayMili/apps/tik_tak_toe/view/jogo_velha_view.dart';
 import 'package:flutter/material.dart';
 
 class TelaInicialJogos extends StatefulWidget {

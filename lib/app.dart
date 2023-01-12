@@ -1,4 +1,4 @@
-import 'package:brincando_flutter/view/tela_inicial_jogos_view.dart';
+import 'package:PlayMili/view/tela_inicial_jogos_view.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {

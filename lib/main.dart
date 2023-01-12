@@ -1,4 +1,4 @@
-import 'package:brincando_flutter/app.dart';
+import 'package:PlayMili/app.dart';
 import 'package:flutter/material.dart';
 
 void main() {

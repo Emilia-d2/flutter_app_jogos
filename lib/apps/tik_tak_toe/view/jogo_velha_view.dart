@@ -34,6 +34,7 @@ class _JogoVelhaViewState extends State<JogoVelhaView> {
                       ),
                     ),
                     onPressed: () {},
+                    // ignore: unrelated_type_equality_checks
                     child: const Text("") == false
                         ? const Text("X")
                         : const Text(""),
