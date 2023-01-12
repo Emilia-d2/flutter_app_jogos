@@ -1,4 +1,4 @@
-package com.example.brincando_flutter
+package com.example.PlayMili
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(brincando_flutter LANGUAGES CXX)
+project(PlayMili LANGUAGES CXX)
 
-set(BINARY_NAME "brincando_flutter")
+set(BINARY_NAME "PlayMili")
 
 cmake_policy(SET CMP0063 NEW)
 

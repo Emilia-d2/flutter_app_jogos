@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: const MyHomePage(title: 'Brincando App'),
+      home: const MyHomePage(title: 'Play Mili'),
     );
   }
 }

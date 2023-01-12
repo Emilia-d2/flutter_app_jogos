@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "brincando_flutter" "\0"
+            VALUE "FileDescription", "PlayMili" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "brincando_flutter" "\0"
+            VALUE "InternalName", "PlayMili" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "brincando_flutter.exe" "\0"
-            VALUE "ProductName", "brincando_flutter" "\0"
+            VALUE "OriginalFilename", "PlayMili.exe" "\0"
+            VALUE "ProductName", "PlayMili" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

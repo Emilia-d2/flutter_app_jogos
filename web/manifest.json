@@ -1,6 +1,6 @@
 {
-    "name": "brincando_flutter",
-    "short_name": "brincando_flutter",
+    "name": "PlayMili",
+    "short_name": "PlayMili",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
