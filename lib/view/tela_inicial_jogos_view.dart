@@ -1,5 +1,6 @@
 import 'package:PlayMili/apps/calculadora/view/calculadora_view.dart';
 import 'package:PlayMili/apps/lembretes/view/lembretes_view.dart';
+import 'package:PlayMili/apps/mega_sena/view/mega_sena_view.dart';
 import 'package:PlayMili/apps/tarefas/view/tarefas_view.dart';
 import 'package:PlayMili/apps/tik_tak_toe/view/jogo_velha_view.dart';
 import 'package:flutter/material.dart';
@@ -118,6 +119,32 @@ class _TelaInicialJogosState extends State<TelaInicialJogos> {
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (_) => const TarefasView()));
+              },
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 24, right: 24, bottom: 24),
+            child: OutlinedButton.icon(
+              icon: const Icon(Icons.receipt_outlined),
+              label: const Text(
+                'MegaSena',
+                style: TextStyle(fontSize: 24, color: Colors.purple),
+              ),
+              style: OutlinedButton.styleFrom(
+                elevation: 0.0,
+                minimumSize: const Size(double.infinity, 102.0),
+                side: const BorderSide(
+                  color: Colors.purple,
+                ),
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(16.0),
+                  ),
+                ),
+              ),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (_) => const MegaSenaView()));
               },
             ),
           ),

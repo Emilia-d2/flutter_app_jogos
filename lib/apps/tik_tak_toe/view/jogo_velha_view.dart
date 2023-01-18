@@ -8,6 +8,17 @@ class JogoVelhaView extends StatefulWidget {
 }
 
 class _JogoVelhaViewState extends State<JogoVelhaView> {
+  bool x = false;
+  bool o = false;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    x = false;
+    o = false;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,48 +35,141 @@ class _JogoVelhaViewState extends State<JogoVelhaView> {
           children: [
             Row(
               children: [
-                Expanded(
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      elevation: 0.0,
-                      minimumSize: const Size(double.infinity, 92.0),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
+                Visibility(
+                  visible: x == false,
+                  child: Expanded(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0.0,
+                        minimumSize: const Size(double.infinity, 92.0),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
                       ),
+                      onPressed: () {
+                        x = true;
+
+                        setState(() {
+                          x;
+                        });
+                      },
+                      // ignore: unrelated_type_equality_checks
+                      child: const Text(""),
                     ),
-                    onPressed: () {},
-                    // ignore: unrelated_type_equality_checks
-                    child: const Text("") == false
-                        ? const Text("X")
-                        : const Text(""),
+                  ),
+                ),
+                Visibility(
+                  visible: x == true,
+                  child: Expanded(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0.0,
+                        minimumSize: const Size(double.infinity, 92.0),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      onPressed: () {
+                        x = false;
+                        setState(() {
+                          x;
+                        });
+                      },
+                      // ignore: unrelated_type_equality_checks
+                      child: const Text("X"),
+                    ),
                   ),
                 ),
                 const SizedBox(width: 8),
-                Expanded(
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      elevation: 0.0,
-                      minimumSize: const Size(double.infinity, 92.0),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
+                Visibility(
+                  visible: x == false,
+                  child: Expanded(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0.0,
+                        minimumSize: const Size(double.infinity, 92.0),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
                       ),
+                      onPressed: () {
+                        x = true;
+
+                        setState(() {
+                          x;
+                        });
+                      },
+                      // ignore: unrelated_type_equality_checks
+                      child: const Text(""),
                     ),
-                    onPressed: () {},
-                    child: const Text(""),
+                  ),
+                ),
+                Visibility(
+                  visible: x == true,
+                  child: Expanded(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0.0,
+                        minimumSize: const Size(double.infinity, 92.0),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      onPressed: () {
+                        x = false;
+                        setState(() {
+                          x;
+                        });
+                      },
+                      // ignore: unrelated_type_equality_checks
+                      child: const Text("X"),
+                    ),
                   ),
                 ),
                 const SizedBox(width: 8),
-                Expanded(
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      elevation: 0.0,
-                      minimumSize: const Size(double.infinity, 92.0),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
+                Visibility(
+                  visible: x == false,
+                  child: Expanded(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0.0,
+                        minimumSize: const Size(double.infinity, 92.0),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
                       ),
+                      onPressed: () {
+                        x = true;
+
+                        setState(() {
+                          x;
+                        });
+                      },
+                      // ignore: unrelated_type_equality_checks
+                      child: const Text(""),
                     ),
-                    onPressed: () {},
-                    child: const Text(""),
+                  ),
+                ),
+                Visibility(
+                  visible: x == true,
+                  child: Expanded(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0.0,
+                        minimumSize: const Size(double.infinity, 92.0),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      onPressed: () {
+                        x = false;
+                        setState(() {
+                          x;
+                        });
+                      },
+                      // ignore: unrelated_type_equality_checks
+                      child: const Text("X"),
+                    ),
                   ),
                 ),
               ],
@@ -74,45 +178,141 @@ class _JogoVelhaViewState extends State<JogoVelhaView> {
               padding: const EdgeInsets.only(top: 8),
               child: Row(
                 children: [
-                  Expanded(
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        elevation: 0.0,
-                        minimumSize: const Size(double.infinity, 92.0),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
+                  Visibility(
+                    visible: x == false,
+                    child: Expanded(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          elevation: 0.0,
+                          minimumSize: const Size(double.infinity, 92.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                         ),
+                        onPressed: () {
+                          x = true;
+
+                          setState(() {
+                            x;
+                          });
+                        },
+                        // ignore: unrelated_type_equality_checks
+                        child: const Text(""),
                       ),
-                      onPressed: () {},
-                      child: const Text(""),
+                    ),
+                  ),
+                  Visibility(
+                    visible: x == true,
+                    child: Expanded(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          elevation: 0.0,
+                          minimumSize: const Size(double.infinity, 92.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        ),
+                        onPressed: () {
+                          x = false;
+                          setState(() {
+                            x;
+                          });
+                        },
+                        // ignore: unrelated_type_equality_checks
+                        child: const Text("X"),
+                      ),
                     ),
                   ),
                   const SizedBox(width: 8),
-                  Expanded(
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        elevation: 0.0,
-                        minimumSize: const Size(double.infinity, 92.0),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
+                  Visibility(
+                    visible: x == false,
+                    child: Expanded(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          elevation: 0.0,
+                          minimumSize: const Size(double.infinity, 92.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                         ),
+                        onPressed: () {
+                          x = true;
+
+                          setState(() {
+                            x;
+                          });
+                        },
+                        // ignore: unrelated_type_equality_checks
+                        child: const Text(""),
                       ),
-                      onPressed: () {},
-                      child: const Text(""),
+                    ),
+                  ),
+                  Visibility(
+                    visible: x == true,
+                    child: Expanded(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          elevation: 0.0,
+                          minimumSize: const Size(double.infinity, 92.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        ),
+                        onPressed: () {
+                          x = false;
+                          setState(() {
+                            x;
+                          });
+                        },
+                        // ignore: unrelated_type_equality_checks
+                        child: const Text("X"),
+                      ),
                     ),
                   ),
                   const SizedBox(width: 8),
-                  Expanded(
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        elevation: 0.0,
-                        minimumSize: const Size(double.infinity, 92.0),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
+                  Visibility(
+                    visible: x == false,
+                    child: Expanded(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          elevation: 0.0,
+                          minimumSize: const Size(double.infinity, 92.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                         ),
+                        onPressed: () {
+                          x = true;
+
+                          setState(() {
+                            x;
+                          });
+                        },
+                        // ignore: unrelated_type_equality_checks
+                        child: const Text(""),
                       ),
-                      onPressed: () {},
-                      child: const Text(""),
+                    ),
+                  ),
+                  Visibility(
+                    visible: x == true,
+                    child: Expanded(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          elevation: 0.0,
+                          minimumSize: const Size(double.infinity, 92.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        ),
+                        onPressed: () {
+                          x = false;
+                          setState(() {
+                            x;
+                          });
+                        },
+                        // ignore: unrelated_type_equality_checks
+                        child: const Text("X"),
+                      ),
                     ),
                   ),
                 ],
@@ -122,45 +322,141 @@ class _JogoVelhaViewState extends State<JogoVelhaView> {
               padding: const EdgeInsets.only(top: 8),
               child: Row(
                 children: [
-                  Expanded(
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        elevation: 0.0,
-                        minimumSize: const Size(double.infinity, 92.0),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
+                  Visibility(
+                    visible: x == false,
+                    child: Expanded(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          elevation: 0.0,
+                          minimumSize: const Size(double.infinity, 92.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                         ),
+                        onPressed: () {
+                          x = true;
+
+                          setState(() {
+                            x;
+                          });
+                        },
+                        // ignore: unrelated_type_equality_checks
+                        child: const Text(""),
                       ),
-                      onPressed: () {},
-                      child: const Text(""),
+                    ),
+                  ),
+                  Visibility(
+                    visible: x == true,
+                    child: Expanded(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          elevation: 0.0,
+                          minimumSize: const Size(double.infinity, 92.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        ),
+                        onPressed: () {
+                          x = false;
+                          setState(() {
+                            x;
+                          });
+                        },
+                        // ignore: unrelated_type_equality_checks
+                        child: const Text("X"),
+                      ),
                     ),
                   ),
                   const SizedBox(width: 8),
-                  Expanded(
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        elevation: 0.0,
-                        minimumSize: const Size(double.infinity, 92.0),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
+                  Visibility(
+                    visible: x == false,
+                    child: Expanded(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          elevation: 0.0,
+                          minimumSize: const Size(double.infinity, 92.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                         ),
+                        onPressed: () {
+                          x = true;
+
+                          setState(() {
+                            x;
+                          });
+                        },
+                        // ignore: unrelated_type_equality_checks
+                        child: const Text(""),
                       ),
-                      onPressed: () {},
-                      child: const Text(""),
+                    ),
+                  ),
+                  Visibility(
+                    visible: x == true,
+                    child: Expanded(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          elevation: 0.0,
+                          minimumSize: const Size(double.infinity, 92.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        ),
+                        onPressed: () {
+                          x = false;
+                          setState(() {
+                            x;
+                          });
+                        },
+                        // ignore: unrelated_type_equality_checks
+                        child: const Text("X"),
+                      ),
                     ),
                   ),
                   const SizedBox(width: 8),
-                  Expanded(
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        elevation: 0.0,
-                        minimumSize: const Size(double.infinity, 92.0),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
+                  Visibility(
+                    visible: x == false,
+                    child: Expanded(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          elevation: 0.0,
+                          minimumSize: const Size(double.infinity, 92.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                         ),
+                        onPressed: () {
+                          x = true;
+
+                          setState(() {
+                            x;
+                          });
+                        },
+                        // ignore: unrelated_type_equality_checks
+                        child: const Text(""),
                       ),
-                      onPressed: () {},
-                      child: const Text(""),
+                    ),
+                  ),
+                  Visibility(
+                    visible: x == true,
+                    child: Expanded(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          elevation: 0.0,
+                          minimumSize: const Size(double.infinity, 92.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        ),
+                        onPressed: () {
+                          x = false;
+                          setState(() {
+                            x;
+                          });
+                        },
+                        // ignore: unrelated_type_equality_checks
+                        child: const Text("X"),
+                      ),
                     ),
                   ),
                 ],
